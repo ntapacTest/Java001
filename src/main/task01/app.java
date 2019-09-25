@@ -21,7 +21,7 @@ public class app {
         System.out.println(Arrays.stream(wordList)
                 .collect(Collectors.groupingBy(p -> p))
                 .entrySet().stream()
-                .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue().size()))
+                .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue().size()*-1))
                 .entrySet().stream()
                 .sorted(Map.Entry.comparingByValue())
                 .map(p -> p.getKey())
