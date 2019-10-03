@@ -1,5 +1,7 @@
 package main.lesson_20190925;
 
+import java.io.Serializable;
+
 public class User {
     private String name;
     private Integer age;
